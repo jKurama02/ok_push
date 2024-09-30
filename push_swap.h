@@ -6,7 +6,7 @@
 /*   By: anmedyns <anmedyns@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 16:03:43 by anmedyns          #+#    #+#             */
-/*   Updated: 2024/09/25 18:52:29 by anmedyns         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:58:33 by anmedyns         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ typedef struct s_stack
 	int	*b;
 	int	len_a;
 	int	len_b;
-	int	maxnum;
 }				t_stack;
 
 int		ft_strlen(char *s);
@@ -63,7 +62,5 @@ int		reorder(t_stack *stack, int dim, int f);
 int		reorder(t_stack *stack, int dim, int f);
 int		check_dec(t_stack *stacks);
 int		check_asc(t_stack *stacks);
-//int		ft_min_2(t_stack *stacks);
-//void	ft_min_swap_first_element_2(t_stack *stacks);
 
 #endif

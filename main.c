@@ -6,7 +6,7 @@
 /*   By: anmedyns <anmedyns@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 15:58:23 by anmedyns          #+#    #+#             */
-/*   Updated: 2024/09/25 19:07:14 by anmedyns         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:59:57 by anmedyns         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int	check_dup(int *arr, int len)
 		i++;
 	}
 	i = -1;
-	while (i++ < len)
+	while (i++ < len - 1)
 	{
 		if ((arr[i] < -214748364) || (arr[i] > 214748364))
 			return (1);
@@ -133,7 +133,6 @@ int	main(int argc, char **argv)
 		ft_exit(stacks);
 		return (0);
 	}
-	stacks.maxnum = max_num(stacks.a, stacks.len_a);
 	algoritm (&stacks);
 	free(stacks.a);
 	free(stacks.b);
